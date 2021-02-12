@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Library</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div id='newBtnContainer'>
+        <button id='newBtn'>+ New Book</button>
+    </div>
+
+    <!--Form-->
+    <div id="formContainer">
+        <form id="form">
+            <h1>New Book</h1>
+            <span class="close">&times;</span>
+            <div id='textInput'>
+                <p><input type='text' id='title' name='title' placeholder='Title'></p>
+                <p><input type='text' id='author' name='author' placeholder='Author'></p>
+                <p><input type='text' id='pages' name='pages' placeholder='Pages'></p>
+            </div>
+
+            <div id='checkBox'>
+                <p><label>Read: </label><input type='checkbox' id='isRead' name='read' value='yes'></p>
+            </div>
+            <button type='submit' form='form' id='submit'>Add Book</button>
+        </form>
+    </div>
+
+    <!--Library-->
+    <div id="library">
+
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
