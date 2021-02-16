@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-
+    <script src="https://kit.fontawesome.com/b08fa88aa0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
 </head>
 
 <body>
-    <div id='newBtnContainer'>
-        <button id='newBtn'>+ New Book</button>
+    <div class='header'>
+        <h1>Library</h1>
+        <h4>A place to put your books</h4>
     </div>
 
     <!--Form-->
@@ -23,13 +25,18 @@
             <h1>New Book</h1>
             <span class="close">&times;</span>
             <div id='textInput'>
-                <p><input type='text' id='title' name='title' placeholder='Title'></p>
-                <p><input type='text' id='author' name='author' placeholder='Author'></p>
-                <p><input type='text' id='pages' name='pages' placeholder='Pages'></p>
+                <p><input type='text' id='title' name="fname" required placeholder='Title'></p>
+                <p><input type='text' id='author' name="fname" required placeholder='Author'></p>
+                <p><input type='number' id='pages' name="fname" required placeholder='Pages'></p>
             </div>
 
             <div id='checkBox'>
-                <p><label>Read: </label><input type='checkbox' id='isRead' name='read' value='yes'></p>
+                <label>Read: </label>
+                <label class="switch">
+
+                    <input type='checkbox' id='isRead' name='read' value='yes'>
+                    <span class="slider round"></span>
+                </label>
             </div>
             <button type='submit' form='form' id='submit'>Add Book</button>
         </form>
@@ -40,7 +47,19 @@
 
     </div>
 
+    <!--New Button-->
+    <div id='newBtnContainer'>
+        <button id='newBtn'>+ New Book</button>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <a class="fab fa-github" href="https://github.com/pancreaspinch/library"></a>
+    </div>
+
     <script src="scripts.js"></script>
 </body>
+
+
 
 </html>

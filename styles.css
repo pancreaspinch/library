@@ -1,3 +1,173 @@
-#formContainer {
-    display: none;
+@media screen and (min-width: 800px) {
+    #library {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        
+    }
 }
+
+.header{
+    text-align: center;
+}
+
+/*Form*/
+#formContainer {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    font-size: 30px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    border: #161f27;
+}
+
+.close{
+    color: white;
+    position: relative;
+    left: 220px;
+    bottom: 80px;
+}
+
+#checkBox{
+    padding-bottom: 1rem;
+}
+
+#newBtnContainer {
+    text-align: center;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+
+}
+
+/* Book */
+
+.book {
+    padding-top: 2rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #161f27;
+    text-align: center;
+}
+
+.book .deleteBtn{
+    position: relative;
+    bottom: 30px;
+    left: 100px;   
+    color: grey;
+}
+.book .deleteBtn:hover{
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.titleDiv{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+.authorDiv{
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 1rem;
+}
+
+.pagesDiv{
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 1rem;
+}
+
+
+/*Slider Styles*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 30px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: .5rem;
+    color: white;
+    text-align: center;
+  }
+
+
+
+
